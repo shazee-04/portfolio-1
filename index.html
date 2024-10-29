@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shazee Sandaruwan | Portfolio</title>
+</head>
+
+<body id="body" onload="onLoad();" onmousemove="mouseFollower(m);">
+    <section>
+        <div class="navbar">
+            <button class="btn-nav1" onclick="btn('projects/projects.html');">Projects</button>
+            <button class="btn-nav2" onclick="btn('contact/contact.html');">Contact</button>
+        </div>
+
+        <div class="hero">
+            <div class="container-main" id="container-main">
+                <div class="container-text" id="container-text">
+                    <div class="box-1" onmouseenter="designerHover();" onmouseleave="designerLeave();">1</div>
+                    <div class="designer-text">Designer</div>
+
+                    <div class="box-2" onmouseenter="developerHover();" onmouseleave="developerLeave();">2</div>
+                    <div class="developer-text">
+                        <span class="developer-span">/</span>Developer
+                    </div>
+                </div>
+
+                <div class="dp-bg-div">
+                    <div class="dp-bg"></div>
+                </div>
+
+                <div class="designer-stroke" id="designer-stroke">
+                    Designer
+                </div>
+
+                <div class="box-3" onmouseenter="dpHover();" onmouseleave="dpLeave();"></div>
+                <div class="dp-div">
+                    <img class="dp-img" src="resources/dp.svg">
+                </div>
+
+                <div class="comment-div">
+                    <div class="comment1-div">
+                        <div>
+                            <div class="comment1-txt">Hey there! <b>Welcometo my portfolio.</b> Click on projects you
+                                might find something interesting!</div>
+                            <img class="comment1-img" src="resources/comment1.png">
+                        </div>
+                    </div>
+                    <div class="comment2-div">
+                        <div>
+                            <div class="comment2-txt">I am <b>Shazee Sandaruwan</b> a <b>Designer</b> and also a <b>Software Engineering Undergraduate!</b> 
+                                Feel free to contact me.</div>
+                            <img class="comment2-img" src="resources/comment2.png">
+                        </div>
+                    </div>
+                    <div class="comment3-div"></div>
+                </div>
+                
+                <div class="cloud-1">
+                    <img src="resources/1.svg">
+                </div>
+                <div class="cloud-2">
+                    <img src="resources/3.svg">
+                </div>
+                <div class="cloud-3">
+                    <img src="resources/3.svg">
+                </div>
+                <div class="cloud-grad"></div>
+
+                <div id="move"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
