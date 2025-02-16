@@ -21,50 +21,50 @@ function scrollToBottom() {
     }, 500);
 }
 
-function dpHover(){
+function dpHover() {
     document.querySelector(".designer-text").classList.add("blur");
     document.querySelector(".designer-stroke").classList.add("blur");
     document.querySelector(".developer-text").classList.add("blur");
 
     document.querySelector(".comment1-img").classList.add("comment-hover");
     document.querySelector(".comment1-txt").classList.add("comment-hover");
-        
+
     document.querySelector(".comment2-img").classList.add("comment-hover");
     document.querySelector(".comment2-txt").classList.add("comment-hover");
-      
+
 }
 
-function dpLeave(){
+function dpLeave() {
     document.querySelector(".designer-text").classList.remove("blur");
     document.querySelector(".designer-stroke").classList.remove("blur");
     document.querySelector(".developer-text").classList.remove("blur");
 
     document.querySelector(".comment2-img").classList.remove("comment-hover");
     document.querySelector(".comment2-txt").classList.remove("comment-hover");
-        
+
     document.querySelector(".comment1-img").classList.remove("comment-hover");
     document.querySelector(".comment1-txt").classList.remove("comment-hover");
-      
+
 }
 
-function designerHover(){
+function designerHover() {
     document.querySelector(".dp-img").classList.add("blur");
     document.querySelector(".developer-text").classList.add("blur");
 }
 
-function designerLeave(){
+function designerLeave() {
     document.querySelector(".dp-img").classList.remove("blur");
     document.querySelector(".developer-text").classList.remove("blur");
 }
 
 
-function developerHover(){
+function developerHover() {
     document.querySelector(".dp-img").classList.add("blur");
     document.querySelector(".designer-stroke").classList.add("blur");
     document.querySelector(".designer-text").classList.add("blur");
 }
 
-function developerLeave(){
+function developerLeave() {
     document.querySelector(".dp-img").classList.remove("blur");
     document.querySelector(".designer-stroke").classList.remove("blur");
     document.querySelector(".designer-text").classList.remove("blur");
@@ -83,7 +83,18 @@ function btn(reDirect) {
 //     move.animate({
 //         left: `${clientX}px`,
 //         top: `${clientY}px`
-    
+
 //     }, {duration: 1000, fill: "forwards"})
 
 // }
+
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.body.style.pointerEvents = "none";
+    } else {
+        setTimeout(() => {
+            document.querySelector(".loader-div").classList.add('hidden');
+            document.body.style.pointerEvents = "all";
+        }, 500);
+    }
+};
