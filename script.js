@@ -8,18 +8,18 @@ function onLoad() {
     }
 }
 
-function scrollToBottom() {
-    setInterval(() => {
-        setInterval(() => {
-            scroll_Y = scroll_Y + 4;
-            if (scroll_Y < scroll_Height) {
-                window.scrollTo(scroll_X, scroll_Y);
-            } else {
-                clearInterval(scrollToBottom);
-            }
-        }, 10);
-    }, 500);
-}
+// function scrollToBottom() {
+//    setInterval(() => {
+//        setInterval(() => {
+//            scroll_Y = scroll_Y + 4;
+//            if (scroll_Y < scroll_Height) {
+//                window.scrollTo(scroll_X, scroll_Y);
+//            } else {
+//                clearInterval(scrollToBottom);
+//            }
+//        }, 10);
+//    }, 500);
+//}
 
 function dpHover() {
     document.querySelector(".designer-text").classList.add("blur");
