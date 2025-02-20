@@ -3,9 +3,9 @@ var scroll_X = scrollX;
 var scroll_Height = document.body.scrollHeight;
 
 function onLoad() {
-    if (scroll_Y < 50) {
+    //if (scroll_Y < 50) {
         scrollToBottom();
-    }
+    //}
 }
 
 // function scrollToBottom() {
