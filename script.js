@@ -95,6 +95,6 @@ document.onreadystatechange = function () {
         setTimeout(() => {
             document.querySelector(".loader-div").classList.add('hidden');
             document.body.style.pointerEvents = "all";
-        }, 500);
+        }, 1500);
     }
 };
